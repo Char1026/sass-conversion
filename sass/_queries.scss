@@ -1,0 +1,21 @@
+$bp-sm: 701px;
+$bp-md: 901px;
+$bp-lg: 1401px;
+
+@mixin mediaSmall(){
+    @media all and(min-width:$bp-sm){
+        @content;
+    }
+}
+
+@mixin mediaMedium(){
+    @media all and(min-width:$bp-md){
+        @content;
+    }
+}
+
+@mixin mediaLarge(){
+    @media all and(min-width:1401px){
+        @content;
+    }
+}
